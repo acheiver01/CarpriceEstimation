@@ -20,7 +20,7 @@ data = data.dropna(axis=0).reset_index(drop=True)
 model = joblib.load("cardata_rfreg.pkl")
 
 
-st.header("Estimation of SellingPrice on Details:")
+st.header("Prediction of SellingPrice Based on given Details:")
 
 # Description
 st.write("""Built a Predictive model in Machine Learning to estimate Selling price on used cars data.
@@ -88,7 +88,7 @@ with col11:
 
 with col12:
     torque = st.number_input("Enter torque in nm:")
-    st.write(torque)   
+    st.write(torque)
 
 with col13:
     speed= st.number_input("Enter speed in rpm:")
